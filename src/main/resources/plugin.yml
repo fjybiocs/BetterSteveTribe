@@ -1,0 +1,9 @@
+name: BetterSteveTribe
+version: '${project.version}'
+main: org.stevetribe.betterstevetribe.BetterSteveTribe
+api-version: '1.20'
+
+commands:
+  st:
+    description: 传送相关
+    usage: /<command>
