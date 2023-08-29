@@ -5,13 +5,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
-import org.bukkit.persistence.PersistentDataContainer;
 
 public class PlayerJumpListener implements Listener {
 
@@ -38,6 +36,8 @@ public class PlayerJumpListener implements Listener {
                     blockLocation.setX(blockLocation.getX() + 0.5);
                     blockLocation.setY(blockLocation.getY() + 1);
                     blockLocation.setZ(blockLocation.getZ() + 0.5);
+                    blockLocation.setYaw(player.getLocation().getYaw());
+                    blockLocation.setPitch(player.getLocation().getPitch());
                     event.getPlayer().teleport(blockLocation);
                     break;
                 }
@@ -65,6 +65,8 @@ public class PlayerJumpListener implements Listener {
                     blockLocation.setX(blockLocation.getX() + 0.5);
                     blockLocation.setY(blockLocation.getY() + 1);
                     blockLocation.setZ(blockLocation.getZ() + 0.5);
+                    blockLocation.setYaw(player.getLocation().getYaw());
+                    blockLocation.setPitch(player.getLocation().getPitch());
                     event.getPlayer().teleport(blockLocation);
                     break;
                 }

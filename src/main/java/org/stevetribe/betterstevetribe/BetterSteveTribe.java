@@ -9,6 +9,7 @@ import org.stevetribe.betterstevetribe.freshman.PlayerConsumeItemListener;
 import org.stevetribe.betterstevetribe.itembuy.InventoryClickListener;
 import org.stevetribe.betterstevetribe.itembuy.ItemManager;
 import org.stevetribe.betterstevetribe.lift.PlayerJumpListener;
+import org.stevetribe.betterstevetribe.skill.PlayerLevelListener;
 import org.stevetribe.betterstevetribe.utils.SQLiteManager;
 import org.stevetribe.betterstevetribe.teleport.PlayerChatListener;
 import org.stevetribe.betterstevetribe.entity.LivingEntityHandler;
@@ -56,7 +57,7 @@ public final class BetterSteveTribe extends JavaPlugin {
         pluginManager.registerEvents(new InventoryClickListener(), this);
         pluginManager.registerEvents(new PlayerJumpListener(), this);
         pluginManager.registerEvents(new LivingEntityHandler(), this);
-
+        pluginManager.registerEvents(new PlayerLevelListener(), this);
 
         // 注册命令
         this.getCommand("st").setExecutor(new CommandExecutor());
