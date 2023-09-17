@@ -23,13 +23,7 @@ public final class BetterSteveTribe extends JavaPlugin {
     public void onEnable() {
         // 读取配置文件并加载物品信息
         saveDefaultConfig(); // 保证默认配置文件存在
-        try {
-            ItemManager.loadItemsFromConfig();
-        } catch (IOException e) {
-            getLogger().severe("Failed to load items from config.");
-            getServer().getPluginManager().disablePlugin(this);
-            throw new RuntimeException(e);
-        }
+        ItemManager.getInstance().init(this); // 初始化ItemManager
 
         // 初始化sqlite
         try {
@@ -75,5 +69,6 @@ public final class BetterSteveTribe extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
         getLogger().info("BetterSteveTribe now disabled.");
+        ItemManager.getInstance().onDestory();
     }
 }

@@ -1,0 +1,495 @@
+high:
+  - name: "DIAMOND_ORE"
+    price: 19200.0
+    limit: 7
+  - name: "CUT_COPPER"
+    price: 1080.0
+    limit: 7
+  - name: "WEATHERED_CUT_COPPER_STAIRS"
+    price: 540.0
+    limit: 7
+  - name: "WEATHERED_CUT_COPPER"
+    price: 1080.0
+    limit: 7
+  - name: "COPPER_INGOT"
+    price: 480.0
+    limit: 7
+  - name: "GOLD_INGOT"
+    price: 2080.0
+    limit: 7
+  - name: "RAW_IRON_BLOCK"
+    price: 11520.0
+    limit: 7
+  - name: "IRON_INGOT"
+    price: 1140.0
+    limit: 7
+  - name: "IRON_NUGGET"
+    price: 160.0
+    limit: 7
+  - name: "GOLD_BLOCK"
+    price: 18720.0
+    limit: 7
+  - name: "COPPER_ORE"
+    price: 3200.0
+    limit: 7
+  - name: "GOLD_BLOCK"
+    price: 18720.0
+    limit: 7
+
+low:
+  - name: "LIGHT_GRAY_DYE"
+    price: 300.0
+    limit: 7
+  - name: "LIGHT_BLUE_CONCRETE"
+    price: 300.0
+    limit: 7
+  - name: "LEVER"
+    price: 300.0
+    limit: 7
+  - name: "CUT_COPPER_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "WHITE_CARPET"
+    price: 300.0
+    limit: 7
+  - name: "ORANGE_CONCRETE"
+    price: 300.0
+    limit: 7
+  - name: "COOKED_COD"
+    price: 300.0
+    limit: 7
+  - name: "AZALEA_LEAVES"
+    price: 300.0
+    limit: 7
+  - name: "JACK_O_LANTERN"
+    price: 300.0
+    limit: 7
+  - name: "QUARTZ_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "RED_CARPET"
+    price: 300.0
+    limit: 7
+  - name: "AZALEA"
+    price: 300.0
+    limit: 7
+  - name: "GREEN_GLAZED_TERRACOTTA"
+    price: 300.0
+    limit: 7
+  - name: "GREEN_GLAZED_TERRACOTTA"
+    price: 300.0
+    limit: 7
+  - name: "CHERRY_LEAVES"
+    price: 300.0
+    limit: 7
+  - name: "POLISHED_BLACKSTONE_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "YELLOW_CANDLE"
+    price: 300.0
+    limit: 7
+  - name: "MOSS_BLOCK"
+    price: 600.0
+    limit: 7
+  - name: "DEEPSLATE"
+    price: 300.0
+    limit: 7
+  - name: "BRICK_WALL"
+    price: 300.0
+    limit: 7
+  - name: "SMOOTH_SANDSTONE_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "AZURE_BLUET"
+    price: 300.0
+    limit: 7
+  - name: "POLISHED_ANDESITE"
+    price: 300.0
+    limit: 7
+  - name: "BASALT"
+    price: 300.0
+    limit: 7
+  - name: "CUT_COPPER_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "ORANGE_CARPET"
+    price: 300.0
+    limit: 7
+  - name: "CYAN_CANDLE"
+    price: 300.0
+    limit: 7
+  - name: "BLUE_CANDLE"
+    price: 300.0
+    limit: 7
+  - name: "PURPLE_CANDLE"
+    price: 300.0
+    limit: 7
+  - name: "ORANGE_CANDLE"
+    price: 300.0
+    limit: 7
+  - name: "WHITE_CONCRETE_POWDER"
+    price: 300.0
+    limit: 7
+  - name: "BROWN_CONCRETE_POWDER"
+    price: 300.0
+    limit: 7
+  - name: "GREEN_CONCRETE_POWDER"
+    price: 300.0
+    limit: 7
+  - name: "PINK_CONCRETE_POWDER"
+    price: 300.0
+    limit: 7
+  - name: "BLACK_STAINED_GLASS"
+    price: 300.0
+    limit: 7
+  - name: "GRAY_STAINED_GLASS"
+    price: 300.0
+    limit: 7
+  - name: "ORANGE_STAINED_GLASS"
+    price: 300.0
+    limit: 7
+  - name: "YELLOW_STAINED_GLASS"
+    price: 300.0
+    limit: 7
+  - name: "RED_STAINED_GLASS"
+    price: 300.0
+    limit: 7
+  - name: "GRASS_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "DEAD_BRAIN_CORAL_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "DEAD_BUBBLE_CORAL_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "DEAD_HORN_CORAL_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "DEAD_FIRE_CORAL"
+    price: 300.0
+    limit: 7
+  - name: "COBWEB"
+    price: 300.0
+    limit: 7
+  - name: "SOUL_TORCH"
+    price: 300.0
+    limit: 7
+  - name: "REDSTONE_TORCH"
+    price: 300.0
+    limit: 7
+  - name: "LANTERN"
+    price: 300.0
+    limit: 7
+  - name: "SOUL_LANTERN"
+    price: 300.0
+    limit: 7
+  - name: "CHAIN"
+    price: 300.0
+    limit: 7
+  - name: "BREWING_STAND"
+    price: 300.0
+    limit: 7
+  - name: "CRYING_OBSIDIAN"
+    price: 900.0
+    limit: 7
+  - name: "LARGE_FERN"
+    price: 600.0
+    limit: 7
+  - name: "GOLDEN_APPLE"
+    price: 600.0
+    limit: 7
+  - name: "COOKIE"
+    price: 300.0
+    limit: 7
+  - name: "AMETHYST_CLUSTER"
+    price: 300.0
+    limit: 7
+  - name: "PAPER"
+    price: 300.0
+    limit: 7
+  - name: "AMETHYST_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "OAK_LOG"
+    price: 300.0
+    limit: 7
+  - name: "BIRCH_BUTTON"
+    price: 300.0
+    limit: 7
+  - name: "MAP"
+    price: 300.0
+    limit: 7
+  - name: "LIGHT_BLUE_DYE"
+    price: 300.0
+    limit: 7
+  - name: "ALLIUM"
+    price: 300.0
+    limit: 7
+  - name: "CRIMSON_FUNGUS"
+    price: 300.0
+    limit: 7
+  - name: "SUNFLOWER"
+    price: 300.0
+    limit: 7
+  - name: "CAVE_VINES"
+    price: 300.0
+    limit: 7
+  - name: "MAGMA_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "SPRUCE_DOOR"
+    price: 300.0
+    limit: 7
+  - name: "ANDESITE_STAIRS"
+    price: 300.0
+    limit: 7
+  - name: "BLAZE_ROD"
+    price: 300.0
+    limit: 7
+  - name: "LEATHER"
+    price: 300.0
+    limit: 7
+  - name: "GREEN_DYE"
+    price: 300.0
+    limit: 7
+  - name: "GLOW_INK_SAC"
+    price: 300.0
+    limit: 7
+  - name: "BONE"
+    price: 300.0
+    limit: 7
+  - name: "CLAY_BALL"
+    price: 300.0
+    limit: 7
+  - name: "OAK_LOG"
+    price: 300.0
+    limit: 7
+  - name: "BIRCH_LOG"
+    price: 300.0
+    limit: 7
+  - name: "JUNGLE_LOG"
+    price: 300.0
+    limit: 7
+  - name: "STRIPPED_OAK_LOG"
+    price: 300.0
+    limit: 7
+  - name: "STRIPPED_BIRCH_LOG"
+    price: 300.0
+    limit: 7
+  - name: "STRIPPED_DARK_OAK_LOG"
+    price: 300.0
+    limit: 7
+  - name: "AMETHYST_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "TERRACOTTA"
+    price: 300.0
+    limit: 7
+  - name: "DIRT"
+    price: 100.0
+    limit: 7
+  - name: "CLAY"
+    price: 300.0
+    limit: 7
+  - name: "GRAVEL"
+    price: 300.0
+    limit: 7
+  - name: "SAND"
+    price: 300.0
+    limit: 7
+  - name: "RED_SAND"
+    price: 300.0
+    limit: 7
+  - name: "ICE"
+    price: 300.0
+    limit: 7
+  - name: "PACKED_ICE"
+    price: 300.0
+    limit: 7
+  - name: "MOSSY_COBBLESTONE"
+    price: 300.0
+    limit: 7
+  - name: "STONE"
+    price: 300.0
+    limit: 7
+  - name: "DRIPSTONE_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "SOUL_SAND"
+    price: 300.0
+    limit: 7
+  - name: "SOUL_SOIL"
+    price: 300.0
+    limit: 7
+  - name: "BLACKSTONE"
+    price: 300.0
+    limit: 7
+  - name: "END_STONE"
+    price: 300.0
+    limit: 7
+  - name: "WARPED_FUNGUS"
+    price: 300.0
+    limit: 7
+  - name: "BAMBOO"
+    price: 120.0
+    limit: 7
+  - name: "DANDELION"
+    price: 300.0
+    limit: 7
+  - name: "ALLIUM"
+    price: 300.0
+    limit: 7
+  - name: "LILY_OF_THE_VALLEY"
+    price: 300.0
+    limit: 7
+  - name: "FLOWERING_AZALEA_LEAVES"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_DANDELION"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_PINK_TULIP"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_RED_TULIP"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_ORANGE_TULIP"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_WHITE_TULIP"
+    price: 300.0
+    limit: 7
+  - name: "POTTED_AZURE_BLUET"
+    price: 300.0
+    limit: 7
+  - name: "SUGAR_CANE"
+    price: 120.0
+    limit: 7
+  - name: "PEONY"
+    price: 300.0
+    limit: 7
+  - name: "GLOW_BERRIES"
+    price: 300.0
+    limit: 7
+  - name: "SWEET_BERRIES"
+    price: 300.0
+    limit: 7
+  - name: "AMETHYST_SHARD"
+    price: 300.0
+    limit: 7
+  - name: "SEA_PICKLE"
+    price: 300.0
+    limit: 7
+  - name: "KELP"
+    price: 300.0
+    limit: 7
+  - name: "HAY_BLOCK"
+    price: 300.0
+    limit: 7
+  - name: "TORCH"
+    price: 120.0
+    limit: 7
+  - name: "END_ROD"
+    price: 300.0
+    limit: 7
+  - name: "GLOWSTONE"
+    price: 300.0
+    limit: 7
+  - name: "CRAFTING_TABLE"
+    price: 120.0
+    limit: 7
+  - name: "STONECUTTER"
+    price: 300.0
+    limit: 7
+  - name: "FURNACE"
+    price: 300.0
+    limit: 7
+  - name: "COMPOSTER"
+    price: 300.0
+    limit: 7
+  - name: "LADDER"
+    price: 300.0
+    limit: 7
+  - name: "FLOWER_POT"
+    price: 300.0
+    limit: 7
+  - name: "OAK_PRESSURE_PLATE"
+    price: 300.0
+    limit: 7
+  - name: "STONE_PRESSURE_PLATE"
+    price: 300.0
+    limit: 7
+  - name: "LIGHT_WEIGHTED_PRESSURE_PLATE"
+    price: 300.0
+    limit: 7
+  - name: "HEAVY_WEIGHTED_PRESSURE_PLATE"
+    price: 300.0
+    limit: 7
+  - name: "BREWING_STAND"
+    price: 300.0
+    limit: 7
+  - name: "MELON_SLICE"
+    price: 120.0
+    limit: 7
+  - name: "GOLDEN_CARROT"
+    price: 300.0
+    limit: 7
+  - name: "COOKED_PORKCHOP"
+    price: 300.0
+    limit: 7
+  - name: "COOKED_MUTTON"
+    price: 300.0
+    limit: 7
+  - name: "COOKED_CHICKEN"
+    price: 300.0
+    limit: 7
+  - name: "ROTTEN_FLESH"
+    price: 300.0
+    limit: 7
+  - name: "RED_WOOL"
+    price: 600.0
+    limit: 7
+  - name: "CHEST"
+    price: 300.0
+    limit: 7
+  - name: "APPLE"
+    price: 300.0
+    limit: 7
+  - name: "BREAD"
+    price: 300.0
+    limit: 7
+  - name: "YELLOW_STAINED_GLASS"
+    price: 600.0
+    limit: 7
+  - name: "PUMPKIN_PIE"
+    price: 600.0
+    limit: 7
+  - name: "SCAFFOLDING"
+    price: 300.0
+    limit: 7
+  - name: "COBBLESTONE"
+    price: 300.0
+    limit: 7
+  - name: "COPPER_INGOT"
+    price: 300.0
+    limit: 7
+  - name: "COD"
+    price: 600.0
+    limit: 7
+  - name: "ROTTEN_FLESH"
+    price: 300.0
+    limit: 7
+  - name: "SPIDER_EYE"
+    price: 300.0
+    limit: 7
+  - name: "COMPARATOR"
+    price: 300.0
+    limit: 7
+  - name: "BROWN_MUSHROOM"
+    price: 600.0
+    limit: 7
+  - name: "POISONOUS_POTATO"
+    price: 900.0
+    limit: 7
