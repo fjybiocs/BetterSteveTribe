@@ -152,31 +152,6 @@ public class ItemManager {
     private void getItemByType( YamlConfiguration config, String type, int nums) {
         if(config.contains(type)) {
             List<Object> itemList = (List<Object>) config.getList(type);
-
-            for(int i = 0 ; i < itemList.size(); i++){
-                Object itemObject = itemList.get(i);
-                Map<String, Object> itemMap = (Map<String, Object>) itemObject;
-                String name = (String) itemMap.get("name");
-                name = name.toUpperCase();
-                // Material m = Material.valueOf(name);
-
-                Material[] enumValues = Material.values();
-                boolean exists = false;
-
-                for (Material myEnum : enumValues) {
-                    if (myEnum.name().equals(name)) {
-                        exists = true;
-                        // System.out.println("枚举常量存在：" + myEnum);
-                        break;
-                    }
-                }
-
-                if (!exists) {
-                    System.out.println("枚举常量不存在：" + name);
-                }
-
-            }
-
             if(itemList == null) {
                 return;
             }

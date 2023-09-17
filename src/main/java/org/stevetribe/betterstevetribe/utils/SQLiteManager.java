@@ -142,7 +142,7 @@ public class SQLiteManager {
             statement.setLong(3, start);
             statement.setLong(4, end);
 
-            System.out.println(statement.toString());
+            // System.out.println(statement.toString());
 
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
