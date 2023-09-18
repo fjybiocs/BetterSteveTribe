@@ -9,12 +9,13 @@ import org.stevetribe.betterstevetribe.freshman.PlayerConsumeItemListener;
 import org.stevetribe.betterstevetribe.itembuy.InventoryClickListener;
 import org.stevetribe.betterstevetribe.itembuy.ItemManager;
 import org.stevetribe.betterstevetribe.lift.PlayerJumpListener;
+import org.stevetribe.betterstevetribe.potion.PotionDrink;
+import org.stevetribe.betterstevetribe.potion.item.Home;
 import org.stevetribe.betterstevetribe.skill.PlayerLevelListener;
 import org.stevetribe.betterstevetribe.utils.SQLiteManager;
 import org.stevetribe.betterstevetribe.teleport.PlayerChatListener;
 import org.stevetribe.betterstevetribe.entity.LivingEntityHandler;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
 public final class BetterSteveTribe extends JavaPlugin {
@@ -52,9 +53,13 @@ public final class BetterSteveTribe extends JavaPlugin {
         pluginManager.registerEvents(new PlayerJumpListener(), this);
         pluginManager.registerEvents(new LivingEntityHandler(), this);
         pluginManager.registerEvents(new PlayerLevelListener(), this);
+        pluginManager.registerEvents(new PotionDrink(), this);
 
         // 注册命令
         this.getCommand("st").setExecutor(new CommandExecutor());
+
+        // 自定义配方
+        Home.addHomeEssenceRecipe();
 
         // log
         getLogger().info("BetterSteveTribe now enabled.");
@@ -67,6 +72,9 @@ public final class BetterSteveTribe extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        // 删除自定义配方
+        Home.deleteHomeEssenceRecipe();
+
         // Plugin shutdown logic
         getLogger().info("BetterSteveTribe now disabled.");
         ItemManager.getInstance().onDestory();
