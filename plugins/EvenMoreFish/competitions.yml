@@ -1,0 +1,96 @@
+competitions:
+
+  mainCompetition:
+    # What type of competition it is,
+    # LARGEST_FISH: The standard, whoever has the largest fish wins
+    # RANDOM: Selects a random competition type
+    # MOST_FISH: Whoever catches the most fish wins
+    # SPECIFIC_RARITY: Whoever is the first to catch a specific rarity wins
+    # LARGEST_TOTAL: Whoever is has the highest total fish size at the end wins
+    # SPECIFIC_FISH: Whoever is the first to catch a specific fish wins
+    type: LARGEST_FISH
+    # How long (minutes) the competition should last for
+    duration: 15
+    # If you preferred the older system you can still use that system, and select days to be blacklisted.
+    times:
+      - "20:00"
+      - "00:08"
+    # Sets days that this competition type won't run on, this is useful if you want one day to be dominated by another competition type
+    blacklisted-days:
+      - "Monday"      
+      - "Tuesday"
+      - "Wednesday"      
+      - "Thursday"
+      - "Friday"      
+      - "Saturday"
+      - "Sunday"      
+
+    # The colour of the bossbar shown at the top of the screen, (defaults to GREEN)
+    bossbar-colour: GREEN
+    # The title of the bossbar (defaults to the one set in messages.yml) - like messages.yml, this won't include the "_s left"
+    bossbar-prefix: "&a&l钓鱼比赛开始啦 "
+    
+
+# By copying and pasting competitions from the "competitions" section, you can make as many as you want. Please make sure that your
+# competition names are all different, otherwise the system may behave unexpectedly.
+
+general:
+
+  # Should broadcasted catches (defined in rarities.yml) only be shown to players holding fishing rods?
+  broadcast-only-rods: true
+
+  # This is the allowed-rarities value used for /emf admin competition start <time> specific_fish
+  allowed-rarities:
+    - "Uncommon"
+    - "Epic"
+    - "Legendary"
+
+  # The colour of the bossbar shown at the top of the screen, (defaults to GREEN)
+  bossbar-colour: GREEN
+  # The title of the bossbar (defaults to the one set in messages.yml) - like messages.yml, this won't include the "_s left"
+  bossbar-prefix: "&a&lFishing Contest: "
+
+  # This is the number-needed value used for /emf admin competition start <time> specific_fish
+  number-needed: 1
+
+  # Fish will only be entered into the competition if they're in this world.
+  #required-worlds:
+  #  - "competition_world"
+
+leaderboard:
+
+  # This is the colours used in the variable {pos_colour} for each position, if you aren't using this variable, it isn't needed.
+  # Start from #1 then go down as many as you like
+  position-colours:
+    - "&6"
+    - "&e"
+    - "&7"
+    - "&7"
+    - "&#888888"
+
+rewards:
+  1:
+    # Commands are run by the console, it's advised to change these rewards before releasing your server.
+    #- "COMMAND:give {player} diamond 5"
+    - "MESSAGE:&a恭喜你获得第一名 ! 奖励3000蕉币"
+    # Can't contain decimals.
+    - "MONEY:3000"
+    # formatted as "effect_name,amplifier,duration", view a list of effects: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+    #- "EFFECT:SPEED,2,5"
+    #- "ITEM:DIAMOND,3"
+  2:
+    #- "ITEM:DIAMOND,2"
+    - "MESSAGE:&b恭喜你获得第二名 ! 奖励2000蕉币"
+    - "MONEY:2000"
+  3:
+    #- "EFFECT:SPEED,1,5"
+    - "MESSAGE:&e恭喜你获得第三名 ! 奖励1000蕉币"
+    #- "ITEM:DIAMOND,1"
+    - "MONEY:1000"
+  participation:
+    - "MESSAGE:&eUnfortunately only the top 3 players receive awards for fishing. Better luck next time. :)"
+  # Add as many more places as you need
+
+# ATTENTION ATTENTION ATTENTION
+# DO NOT EDIT THIS VALUE UNLESS YOU'RE UPDATING THE CONFIG.
+config-version: 1

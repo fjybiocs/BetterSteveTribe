@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "232006df-680d-4114-a27a-97bc6e029fcb",
+    "name": "Symble03",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "988e6504-6f5f-4c07-93be-6262686c6f0b",
+    "name": "Symble",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

@@ -72,7 +72,6 @@ public class SQLiteManager {
         }
     }
 
-
     // 获取第一次加入时间
     public static LocalDateTime getFirstJoinTime(String username) {
         try (Connection connection = initializeConnection();
@@ -143,7 +142,7 @@ public class SQLiteManager {
             statement.setLong(3, start);
             statement.setLong(4, end);
 
-            System.out.println(statement.toString());
+            // System.out.println(statement.toString());
 
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {

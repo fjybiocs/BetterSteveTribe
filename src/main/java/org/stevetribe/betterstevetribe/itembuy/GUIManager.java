@@ -1,5 +1,6 @@
 package org.stevetribe.betterstevetribe.itembuy;
 
+import com.sun.java.accessibility.util.GUIInitializedListener;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -12,12 +13,22 @@ import java.util.Arrays;
 
 public class GUIManager {
 
-    public static String guiTitle = "蕉大市场，点击出售1组";
+    private static GUIManager instance = null;
 
-    public static void openSellGUI(Player player) throws SQLException {
+    public String guiTitle = "蕉大市场，点击出售1组";
+
+    public static  GUIManager getInstance() {
+        if(instance == null) {
+            instance = new GUIManager();
+        }
+
+        return instance;
+    }
+
+    public void openSellGUI(Player player) throws SQLException {
         Inventory inventory = Bukkit.createInventory(null, 27, guiTitle);
-
-        for (SellableItem sellableItem : ItemManager.getSellableItems().values()) {
+        int i = 0;
+        for (SellableItem sellableItem : ItemManager.getInstance().getSellableItems().values()) {
             ItemStack itemStack = new ItemStack(Material.valueOf(sellableItem.getName().toUpperCase()));
             // 获取今日还可出售最大值
             int maxSellCountPerDay;
@@ -34,8 +45,13 @@ public class GUIManager {
             itemStack.setAmount(64);
 
             inventory.addItem(itemStack);
+            i++;
         }
 
         player.openInventory(inventory);
+    }
+
+    private GUIManager(){
+
     }
 }

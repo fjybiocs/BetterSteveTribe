@@ -24,7 +24,7 @@ public class InventoryClickListener implements Listener {
             return;
         }
 
-        if (event.getView().getTitle().equals(GUIManager.guiTitle)) {
+        if (event.getView().getTitle().equals(GUIManager.getInstance().guiTitle)) {
             event.setCancelled(true); // 防止玩家移动物品
 
             Player player = (Player) event.getWhoClicked();
@@ -32,7 +32,7 @@ public class InventoryClickListener implements Listener {
 
             if (clickedItem != null && clickedItem.getType() != Material.AIR) {
                 // 检查该物品是否存在
-                SellableItem sellableItem = ItemManager.getSellableItems().get(clickedItem.getType().name());
+                SellableItem sellableItem = ItemManager.getInstance().getSellableItems().get(clickedItem.getType().name());
                 if (sellableItem == null) {
                     player.sendMessage("§c出错，请联系TPam");
                     return;

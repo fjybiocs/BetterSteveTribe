@@ -10,7 +10,7 @@ import org.stevetribe.betterstevetribe.teleport.TeleportPlayerRequest;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static org.stevetribe.betterstevetribe.itembuy.ItemManager.loadItemsFromConfig;
+// import static org.stevetribe.betterstevetribe.itembuy.ItemManager.loadItemsFromConfig;
 
 public class CommandExecutor implements org.bukkit.command.CommandExecutor {
     @Override
@@ -30,7 +30,7 @@ public class CommandExecutor implements org.bukkit.command.CommandExecutor {
                         return true;
                     }
                     try {
-                        GUIManager.openSellGUI(player);
+                        GUIManager.getInstance().openSellGUI(player);
                     } catch (SQLException e) {
                         player.sendMessage("§c数据库错误，请联系TPam~");
                         return true;
@@ -42,14 +42,15 @@ public class CommandExecutor implements org.bukkit.command.CommandExecutor {
                         player.sendMessage("§c你没有权限执行该命令");
                         return true;
                     }
+                    /**
                     try {
-                        loadItemsFromConfig();
+                        // loadItemsFromConfig();
                         player.sendMessage("§a重载成功");
                         return true;
                     } catch (IOException e) {
                         player.sendMessage("§c配置文件读取错误，请联系TPam~");
                         return true;
-                    }
+                    }*/
                 }
             }
             if (args.length == 2) {
