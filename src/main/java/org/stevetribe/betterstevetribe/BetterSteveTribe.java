@@ -2,6 +2,7 @@ package org.stevetribe.betterstevetribe;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.stevetribe.betterstevetribe.disk.DiskCheckTask;
 import org.stevetribe.betterstevetribe.fly.PlayerFlyListener;
 import org.stevetribe.betterstevetribe.fly.PlayerFlyTask;
 import org.stevetribe.betterstevetribe.death.PlayerRespawnListener;
@@ -38,9 +39,12 @@ public final class BetterSteveTribe extends JavaPlugin {
             // 中断插件启动
         }
 
-        // 定时任务
+        // 定时任务：飞行
         PlayerFlyTask flyTask = new PlayerFlyTask();
         flyTask.runTaskTimer(this, 0, 12);
+        // 定时任务：低磁盘容量检查
+        DiskCheckTask diskCheckTask = new DiskCheckTask();
+        diskCheckTask.runTaskTimer(this, 0, 200);
 
         // 注册监听器
         PluginManager pluginManager = this.getServer().getPluginManager();
