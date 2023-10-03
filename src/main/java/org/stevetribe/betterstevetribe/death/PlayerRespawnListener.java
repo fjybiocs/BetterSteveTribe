@@ -1,9 +1,7 @@
 package org.stevetribe.betterstevetribe.death;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerBedLeaveEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -13,6 +11,10 @@ public class PlayerRespawnListener implements Listener {
     // when a player reborn
     @EventHandler
     public void onPlayerRespawnListener(PlayerRespawnEvent event) {
+        if(event.getRespawnReason() != PlayerRespawnEvent.RespawnReason.DEATH) {
+            return;
+        }
+
         double maxHealth = event.getPlayer().getMaxHealth();
         if (maxHealth > 6) {
             event.getPlayer().setMaxHealth(maxHealth - 2);

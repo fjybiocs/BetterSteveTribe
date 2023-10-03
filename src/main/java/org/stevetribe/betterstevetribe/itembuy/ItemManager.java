@@ -2,27 +2,16 @@ package org.stevetribe.betterstevetribe.itembuy;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.bukkit.Material;
-import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.stevetribe.betterstevetribe.BetterSteveTribe;
-import org.stevetribe.betterstevetribe.utils.TimeUtil;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.Constructor;
-import org.yaml.snakeyaml.nodes.Tag;
-import org.yaml.snakeyaml.representer.Representer;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ItemManager {
@@ -52,7 +41,7 @@ public class ItemManager {
     /**
      * 取消定时刷新任务
      */
-    public void onDestory(){
+    public void onDestroy(){
         scheduler.cancelTasks(context);
         context = null;
         scheduler = null;
@@ -85,7 +74,7 @@ public class ItemManager {
             public void run() {
                 createDailyShopList();
             }
-         }, delay, 24 * 60 * 60 * 20); // 24小时的时间间隔（以游戏刻为单位）
+         }, delay / 50, 24 * 60 * 60 * 20); // 24小时的时间间隔（以游戏刻为单位）
     }
 
     private void updateDailyShop() {
@@ -243,11 +232,9 @@ public class ItemManager {
      * @return string
      */
     private String generateListFileName() {
-        Date date = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd");
-        long timestamp = TimeUtil.string2timestamp(format.format(date));
+        long timestamp = System.currentTimeMillis();
 
-        return "item-list-" + timestamp + ".json";
+        return "item-list-" + timestamp / 1000 / 60 / 60 / 24 + ".json";
     }
 
     private ItemManager() {}

@@ -77,6 +77,6 @@ public final class BetterSteveTribe extends JavaPlugin {
 
         // Plugin shutdown logic
         getLogger().info("BetterSteveTribe now disabled.");
-        ItemManager.getInstance().onDestory();
+        ItemManager.getInstance().onDestroy();
     }
 }
